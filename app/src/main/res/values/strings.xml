@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Classifier</string>
+    <string name="result">Classification result will appear here</string>
+    <string name="capture_button_caption">Capture</string>
+    <string name="select_from_gallery">Select From Gallery</string>
+</resources>
