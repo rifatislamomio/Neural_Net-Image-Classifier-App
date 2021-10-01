@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.pred);
 
         try {
-            classifier = new Classifier(Utils.assetFilePath(this,"modelMNet_scripted.ptl"));
+            classifier = new Classifier(Utils.assetFilePath(this,"modelMNet_v2.ptl"));
         } catch (IOException e) { e.printStackTrace(); }
 
     }
@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     public void Capture(View view)
     {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        //someActivityResultLauncher.launch(intent);
         startActivityForResult(intent, RESULT_CAPTURE_IMG);
     }
 
