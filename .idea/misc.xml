@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rifat/AndroidStudioProjects/Pytorch/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/rifat/AndroidStudioProjects/Pytorch/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/rifat/AndroidStudioProjects/Pytorch/app/src/main/res/layout/activity_select_model.xml" value="0.2" />
       </map>
     </option>
   </component>

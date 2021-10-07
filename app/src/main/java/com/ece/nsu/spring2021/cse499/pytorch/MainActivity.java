@@ -21,18 +21,28 @@ public class MainActivity extends AppCompatActivity {
 
     Classifier classifier;
     ImageView imageView;
-    TextView textView;
+    TextView textView, tvModelName;
+    String modelName="";
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        init();
+    }
+
+    public void init()
+    {
+    	setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.capturedImage);
         textView = findViewById(R.id.pred);
+        tvModelName = findViewById(R.id.modeltv);
+        intent = getIntent();
+        modelName = intent.getStringExtra("model-name");
+        tvModelName.setText(modelName);
 
         try {
-            classifier = new Classifier(Utils.assetFilePath(this,"modelMNet_v2.ptl"));
+            classifier = new Classifier(Utils.assetFilePath(this,modelName));
         } catch (IOException e) { e.printStackTrace(); }
-
     }
 
     public void Capture(View view)
@@ -98,4 +108,5 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(0, 0);
         startActivity(intent);
     }
+
 }

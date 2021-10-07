@@ -3,4 +3,11 @@
     <string name="result">Classification result will appear here</string>
     <string name="capture_button_caption">Capture</string>
     <string name="select_from_gallery">Select From Gallery</string>
+    <string name="custom_cnn">Custom CNN</string>
+    <string name="resnet">ResNet</string>
+    <string name="mobile_net_v2">MobileNet</string>
+    <string name="done">Done</string>
+    <string name="model_name">Model Name</string>
+    <string name="select_model">Select Model</string>
+    <string name="alexnet">AlexNet</string>
 </resources>
